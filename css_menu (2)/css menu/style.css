@@ -1,0 +1,60 @@
+* {
+  background-color: lightgray;
+}
+
+header {
+  color: gray;
+  border-bottom: solid;
+}
+
+.container {
+  display: flex;
+}
+
+.bloc-menu {
+  color: gray;
+  border-right: solid;
+}
+
+ul {
+  list-style: none;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  flex-shrink: 0;
+}
+
+ul li {
+  position: relative;
+  color: blue;
+}
+
+li ul {
+  position: absolute;
+  left: 149px;
+  top: 0;
+  display: none;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  color: blue;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+}
+
+ul li a:hover {
+  background-color: lightcoral;
+}
+
+li:hover ul {
+  display: block;
+}
+
+.poeme {
+  padding-left: 5rem;
+  color: gray;
+}
